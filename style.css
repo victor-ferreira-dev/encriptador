@@ -1,0 +1,15 @@
+:root {
+    --light-blue-100: #F3F5FC;
+    --dark-blue-100: #609ED4;
+    --gray-100: #CED4DA;
+    --white: #FFFFFF;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg,#F3F5FC, rgba(10, 56, 113, 0.2));
+    background-repeat: no-repeat;
+}
