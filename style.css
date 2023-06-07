@@ -1,15 +1,216 @@
 :root {
-    --light-blue-100: #F3F5FC;
+    --dark-blue-300: #0A3871;
+    --dark-blue-200: #356EA9;
     --dark-blue-100: #609ED4;
+    --light-blue-100: #F3F5FC;
+    --gray-400: #495057;
     --gray-100: #CED4DA;
+    --light-gray: #D8DFE8;
     --white: #FFFFFF;
 }
 
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
 }
 
 body {
     background: linear-gradient(45deg,#F3F5FC, rgba(10, 56, 113, 0.2));
-    background-repeat: no-repeat;
 }
+
+    /* header (Logo da Alura) */
+    header {
+
+    }
+
+    /* main (Encriptador) */
+    main {
+        /* display: flex;
+        justify-content: space-between; */
+    }
+
+        /* section-1 */
+        main > :nth-child(1) {
+
+        }
+
+            .text-cript {
+                width: 680px;
+                height: 548px;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 150%;
+                color: var(--dark-blue-300);
+                resize: none;
+                border: none;
+                outline: none;
+                background: transparent;
+                text-transform: lowercase;
+            }
+
+                .text-cript::placeholder {
+                    color: var(--dark-blue-300);
+                    text-transform: none;
+                }
+
+            .container-warning {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 8px;
+                width: 252px;
+                height: 18px;
+            }
+
+                .container-warning h6 {
+                    width: 228px;
+                    height: 18px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 150%;
+                    color: var(--gray-400);
+                    opacity: 0.8;
+                    flex: none;
+                    order: 1;
+                    flex-grow: 0;
+                }
+
+            .container-btn {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 24px;
+                width: 680px;
+                height: 67px;
+            }
+
+                .btn-cript {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 24px;
+                    gap: 8px;
+                    width: 328px;
+                    height: 67px;
+                    background: var(--dark-blue-300);
+                    border-radius: 24px;
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                }
+
+                    .btn-cript span {
+                        width: 280px;
+                        height: 19px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-align: center;
+                        color: var(--white);
+                        flex: none;
+                        order: 0;
+                        flex-grow: 1;
+                    }
+
+                    /* resolver a melhor forma do hover para cript e descript btn --tomorrow */
+                    .btn-cript:hover {
+                        cursor: pointer;
+                        background: var(--dark-blue-200);
+                    }
+
+                .btn-descript {
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 24px;
+                    gap: 8px;
+                    width: 328px;
+                    height: 67px;
+                    background: var(--light-gray);
+                    border: 1px solid var(--dark-blue-300);
+                    border-radius: 24px;
+                    flex: none;
+                    order: 1;
+                    flex-grow: 0;
+                }
+
+                    .btn-descript span {
+                        width: 280px;
+                        height: 19px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-align: center;
+                        color: var(--dark-blue-300);
+                        flex: none;
+                        order: 0;
+                        flex-grow: 1;
+                    }
+                    
+        /* section-2 */
+        main > :nth-child(2) {
+
+        }
+
+            .container-descript {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 400px;
+                height: 944px;
+                background: var(--white);
+                box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+                border-radius: 32px;
+            }
+
+                .text-descript {
+                    width: 336px;
+                    height: 781px;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 150%;
+                    color: var(--gray-400);
+                    resize: none;
+                    border: none;
+                    outline: none;
+                }
+
+                    /* .text-descript::placeholder {
+                        color: var(--gray-100);
+                    } */
+
+                .btn-copy {
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 24px;
+                    gap: 8px;
+                    width: 336px;
+                    height: 67px;
+                    border: 1px solid var(--dark-blue-300);
+                    border-radius: 24px;
+                }
+
+                    .btn-copy span {
+                        width: 288px;
+                        height: 19px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-align: center;
+                        color: var(--dark-blue-300);
+                        flex: none;
+                        order: 0;
+                        flex-grow: 1;
+                    }
+
+    /* footer (Eu) */
+    footer {
+
+    }
+

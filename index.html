@@ -13,20 +13,21 @@
 </head>
 <body>
     <header>
-        <img src="img/logo.png" alt="Logo da Alura">
+        <a href="#"><img src="img/logo.png" alt="Logo da Alura"></a>
     </header>
     <main>
         <section>
-            <textarea class="text-cript" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+            <textarea class="text-cript" cols="10" rows="15" placeholder="Digite seu texto"></textarea>
 
             <div class="container-warning">
                 <!-- Put the h6::before "img/exclamation.png" here -->
+                <img src="svg/exclamation.svg" alt="Ponto de Exclamação">
                 <h6>Apenas letras minúsculas e sem acento.</h6>
             </div>
 
             <div class="container-btn">
-                <button class="btn-cript">Criptografar</button>
-                <button class="btn-descript">Descriptografar</button>
+                <button class="btn-cript"><span>Criptografar</span></button>
+                <button class="btn-descript"><span>Descriptografar</span></button>
             </div>
         </section>
         <section>
@@ -39,10 +40,10 @@
                     <h4>Digite um texto que você deseja <br> criptografar ou descriptografar.</h4>
                 </div> -->
 
-                <textarea class="text-descript" cols="30" rows="10"></textarea>
+                <textarea class="text-descript" cols="10" rows="15"></textarea>
 
                 <!-- Remove "btn-copy" when "container-withoutMsg" appear -->
-                <button class="btn-copy">Copiar</button>
+                <button class="btn-copy"><span>Copiar</span></button>
             </div>
         </section>
     </main>
@@ -50,5 +51,6 @@
         <h6>Desenvolvido por Victor Ferreira</h6>
         <!-- Put "h6::after" LinkedIn & GitHub icons here -->
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
