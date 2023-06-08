@@ -1,9 +1,15 @@
 :root {
+    --dark-blue-500: #052051;
+    --dark-blue-400: #072B61;
     --dark-blue-300: #0A3871;
     --dark-blue-200: #356EA9;
     --dark-blue-100: #609ED4;
+    --light-blue-500: #757FB2;
     --light-blue-100: #F3F5FC;
+    --gray-500: #343A40;
     --gray-400: #495057;
+    --gray-300: #868E96;
+    --gray-200: #ADB5BD;
     --gray-100: #CED4DA;
     --light-gray: #D8DFE8;
     --white: #FFFFFF;
@@ -15,29 +21,47 @@
 }
 
 body {
-    background: linear-gradient(45deg,#F3F5FC, rgba(10, 56, 113, 0.2));
+    background: linear-gradient(45deg, var(--light-blue-100), rgba(10, 56, 113, 0.2));
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    /* overflow-y: hidden; */
 }
 
     /* header (Logo da Alura) */
     header {
-
+        /* display: flex;
+        flex-direction: column;
+        align-items: flex-start; */
     }
+
+        header div {
+            margin: 4vh 0px 0px 5vw;
+        }
+
+            header img {
+                box-shadow: 5px 4px 16px -4px rgba(0, 0, 0, 0.2);
+            }
 
     /* main (Encriptador) */
     main {
-        /* display: flex;
-        justify-content: space-between; */
+        display: flex;
+        justify-content: space-between;
+        margin: 4vh 4vw 4vh 10vw;
     }
 
         /* section-1 */
         main > :nth-child(1) {
-
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1vh;
         }
 
             .text-cript {
                 width: 680px;
-                height: 548px;
-                font-weight: 400;
+                height: 620px;
+                font-weight: 300;
                 font-size: 32px;
                 line-height: 150%;
                 color: var(--dark-blue-300);
@@ -69,11 +93,13 @@ body {
                     font-weight: 400;
                     font-size: 12px;
                     line-height: 150%;
-                    color: var(--gray-400);
-                    opacity: 0.8;
-                    flex: none;
+                    color: var(--gray-500);
+                    opacity: 0.89;
+
+                    /* temp */
+                    /* flex: none;
                     order: 1;
-                    flex-grow: 0;
+                    flex-grow: 0; */
                 }
 
             .container-btn {
@@ -87,6 +113,7 @@ body {
             }
 
                 .btn-cript {
+                    box-sizing: border-box;
                     display: flex;
                     flex-direction: row;
                     align-items: flex-start;
@@ -96,9 +123,7 @@ body {
                     height: 67px;
                     background: var(--dark-blue-300);
                     border-radius: 24px;
-                    flex: none;
-                    order: 0;
-                    flex-grow: 0;
+                    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
                 }
 
                     .btn-cript span {
@@ -109,15 +134,17 @@ body {
                         line-height: 19px;
                         text-align: center;
                         color: var(--white);
-                        flex: none;
-                        order: 0;
-                        flex-grow: 1;
                     }
 
-                    /* resolver a melhor forma do hover para cript e descript btn --tomorrow */
                     .btn-cript:hover {
                         cursor: pointer;
-                        background: var(--dark-blue-200);
+                        background: var(--dark-blue-400);
+                    }
+
+                    .btn-cript:active {
+                        cursor: wait;
+                        background: var(--dark-blue-500);
+
                     }
 
                 .btn-descript {
@@ -129,12 +156,10 @@ body {
                     gap: 8px;
                     width: 328px;
                     height: 67px;
-                    background: var(--light-gray);
+                    background: var(--gray-100);
                     border: 1px solid var(--dark-blue-300);
                     border-radius: 24px;
-                    flex: none;
-                    order: 1;
-                    flex-grow: 0;
+                    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
                 }
 
                     .btn-descript span {
@@ -145,14 +170,23 @@ body {
                         line-height: 19px;
                         text-align: center;
                         color: var(--dark-blue-300);
-                        flex: none;
-                        order: 0;
-                        flex-grow: 1;
+                    }
+
+                    .btn-descript:hover {
+                        cursor: pointer;
+                        background: var(--gray-200);
+                        border: 1.5px solid var(--dark-blue-300);
+                    }
+
+                    .btn-descript:active {
+                        cursor: wait;
+                        background: var(--gray-300);
+                        border: 2px solid var(--dark-blue-300);
                     }
                     
         /* section-2 */
         main > :nth-child(2) {
-
+            margin: 0px 0px 0px 8vw;
         }
 
             .container-descript {
@@ -160,6 +194,7 @@ body {
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-evenly;
+                
                 width: 400px;
                 height: 944px;
                 background: var(--white);
@@ -211,6 +246,41 @@ body {
 
     /* footer (Eu) */
     footer {
-
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 18vw;
     }
 
+        footer div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            
+        }
+
+            /* Fix the <main> resolution with footer */
+            footer div h6 {
+                margin: 0;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 150%;
+                color: var(--gray-500);
+                opacity: 0.89;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+            }
+
+            footer a {
+                text-decoration: none;
+            }
+
+                footer i {
+                    color: var(--gray-300);
+                }
+
+                    footer i:hover{
+                        color: var(--dark-blue-400);
+                    }
