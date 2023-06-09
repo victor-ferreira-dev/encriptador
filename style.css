@@ -15,6 +15,11 @@
     --gray-200: #ADB5BD;
     --gray-100: #CED4DA;
     --light-gray: #D8DFE8;
+    --white-500: #E0E0E0;
+    --white-400: #E8E8E8;
+    --white-300: #F0F0F0;
+    --white-200: #F9F9F9;
+    --white-100: #FFFFFF;
     --white: #FFFFFF;
 }
 
@@ -70,7 +75,7 @@ body {
                 width: 95%;
                 height: 70%;
                 padding: 2%;
-                font-weight: 300;
+                font-weight: 400;
                 font-size: 32px;
                 line-height: 130%;
                 color: var(--dark-blue-300);
@@ -86,6 +91,8 @@ body {
                 .text-cript::placeholder {
                     color: var(--dark-blue-300);
                     text-transform: none;
+                    font-size: 32px;
+                    font-weight: 400;
                 }
 
             .container-warning {
@@ -212,9 +219,47 @@ body {
             border-radius: 32px;
         }
 
+            .container-withoutMsg {
+                width: 80%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 32px;
+                padding: 2%;
+                background: transparent;
+                border: none;
+                border-radius: 16px;
+            }
+
+                .container-withoutMsg div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 16px;
+                }
+
+                    .container-withoutMsg div h2 {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 120%;
+                        color: var(--gray-500);
+                        text-align: center;
+                    }
+
+                    .container-withoutMsg div h4 {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 130%;
+                        color: var(--gray-400);
+                        text-align: center;
+                    }
+
             .text-descript {
-                width: 85%;
-                height: 83%;
+                width: 82%;
+                height: 82%;
                 padding: 2%;
                 text-transform: lowercase;
                 font-size: 24px;
@@ -234,20 +279,20 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background: var(--light-blue-100);
+                background: var(--white-100);
                 border: 1px solid var(--dark-blue-300);
                 border-radius: 24px;
             }
 
                 .btn-copy:hover {
                     cursor: pointer;
-                    background: var(--light-blue-200);
+                    background: var(--white-200);
                     border: 1.5px solid var(--dark-blue-300);
                     transform: scale(1.01);
                 }
 
                 .btn-copy:active {
-                    background: var(--light-blue-300);
+                    background: var(--white-300);
                     border: 2px solid var(--dark-blue-300);
                     transform: scale(1);
                 }
