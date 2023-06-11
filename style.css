@@ -279,6 +279,7 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                gap: 1.7%;
                 background: var(--white-100);
                 border: 1px solid var(--dark-blue-300);
                 border-radius: 24px;
@@ -296,12 +297,18 @@ body {
                     border: 2px solid var(--dark-blue-300);
                     transform: scale(1);
                 }
+                
+                .btn-copy i {
+                    font-size: 20px;
+                    color: var(--dark-blue-300);
+                }
 
                 .btn-copy span {
                     font-weight: 400;
                     font-size: 16px;
                     color: var(--dark-blue-300);
                 }
+
 
     /* footer (Eu) */
     footer {

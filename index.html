@@ -21,15 +21,15 @@
     </header>
     <main>
         <section>
-            <textarea class="text-cript" cols="10" rows="15" placeholder="Digite seu texto"></textarea>
+            <textarea class="text-cript" cols="10" rows="15" placeholder="Digite seu texto" spellcheck="false" autofocus required></textarea>
             <div class="container-warning">
                 <!-- Put the h6::before "img/exclamation.png" here -->
                 <img src="svg/exclamation.svg" alt="Ponto de Exclamação">
                 <h6>Apenas letras minúsculas e sem acento.</h6>
             </div>
             <div class="container-btn">
-                <button class="btn-cript"><span>Criptografar</span></button>
-                <button class="btn-descript"><span>Descriptografar</span></button>
+                <button class="btn-cript" onclick="cript(); hideWithoutMsg()"><span>Criptografar</span></button>
+                <button class="btn-descript" onclick="descript(); hideWithoutMsg()"><span>Descriptografar</span></button>
             </div>
         </section>
         <section>
@@ -42,8 +42,12 @@
                 </div>
             </div>
             <!-- Remove "btn-copy" & "text-descript" when "container-withoutMsg" appear -->
-            <textarea class="text-descript" cols="10" rows="15" readonly></textarea>
-            <button class="btn-copy" type="button"><span>Copiar</span></button>
+            <textarea class="text-descript" cols="10" rows="15" spellcheck="false" readonly></textarea>
+            <button class="btn-copy" type="button" onclick="copy()">
+                <i id="copy" class="fa-solid fa-copy"></i>
+                <i id="check" class="fa-solid fa-check fa-bounce"></i>
+                <span>Copiar</span>
+            </button>
         </section>
     </main>
     <footer>
